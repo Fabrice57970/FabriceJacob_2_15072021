@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Users\\Fabrice\\Documents\\OpenclassroomsGIT\\DémoVScode\\Dossierquizz"
+		},
+		{
+			"name": "setup-development-environment",
+			"path": "..\\..\\Users\\Fabrice\\Documents\\OpenclassroomsGIT\\DémoVScode\\Dossierquizz\\setup-development-environment"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "setup-development-environment",
+		"json.schemas": []
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"[javascript]": {
+		  "editor.defaultFormatter": "esbenp.prettier-vscode"
+		  "editor.formatOnSave": true
+	}
+}

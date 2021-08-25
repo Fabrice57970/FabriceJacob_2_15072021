@@ -1,5 +1,93 @@
-h1
+*
 {
-font-size:2.5em;
-color: red;
+margin:00px;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(src: url('polices/*.eot');
+    src: url('polices/*k.eot?#iefix') format('embedded-opentype'),
+         url('./polices/*k.woff') format('woff'),
+         url(*'./polices/raleway-italic-variablefont_wght.ttf') format('truetype'),
+         url('./polices/raleway-variablefont_wght.ttf') format('truetype'),
+         url('./polices/*k.svg#') format('svg');
+}
+/* styles généraux*/
+.flexstart
+{
+    display: flex;
+    justify-content:flex-start ;
+}
+.flexcentre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+.flexbetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.flexaround
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body
+{
+    font-family: Raleway;
+    text-decoration-style: normal;
+    color:#0065FC;
+}
+/* définition du header */
+
+header
+{
+display:flex;
+justify-content:space-between;
+height:120px;
+margin-left:5px;
+margin-right:5px;}
+img
+{
+    height:35px;
+    margin-top: 15px;
+}
+ul
+{
+    display:flex;
+    height: 120px;
+    width:360px;
+    list-style-type: none;
+    margin-left:25px;
+    margin-top:0px;
+           
+}
+li
+{
+    display:flex;
+    justify-content: center;
+    width: 120px;
+       
+}
+.margemenu
+{
+    
+    text-decoration: none;
+    color:#0065FC;
+    margin-top:25px;
+    
+}
+.couleurnoir
+{
+    color:black;
+}
+/*bordure bleue*/
+.bordure
+{
+    border-top:1px solid #0065FC;
 }
