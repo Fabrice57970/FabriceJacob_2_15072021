@@ -4,10 +4,9 @@ margin:00px;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url(src: url('polices/*.eot');
+    src: url('polices/*.eot');
     src: url('polices/*k.eot?#iefix') format('embedded-opentype'),
          url('./polices/*k.woff') format('woff'),
-         url(*'./polices/raleway-italic-variablefont_wght.ttf') format('truetype'),
          url('./polices/raleway-variablefont_wght.ttf') format('truetype'),
          url('./polices/*k.svg#') format('svg');
 }
@@ -41,9 +40,9 @@ body
 {
     font-family: Raleway;
     text-decoration-style: normal;
-    color:#0065FC;
+    margin-left:5px;
 }
-/* définition du header */
+            /* définition du header */
 
 header
 {
@@ -51,7 +50,9 @@ display:flex;
 justify-content:space-between;
 height:120px;
 margin-left:5px;
-margin-right:5px;}
+margin-right:5px;
+color:#0065FC;
+}
 img
 {
     height:35px;
@@ -90,4 +91,57 @@ li
 .bordure
 {
     border-top:1px solid #0065FC;
+}
+
+/* définition de la zone Trouvez votre hébergement */
+.Trouvez h3
+{
+    height:35px;
+    
+}
+.en_plein
+{
+    height:25px;
+}
+.recherche
+{
+    height:30px;
+    display:flex;
+    margin-top:5px;
+}
+.icoloc
+{
+    font-size:10px;
+    background:rgb(231, 229, 229);
+    border-radius: 10px 0 0 10px;
+    width:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#recherche_ville::placeholder /*pour changer la couleur du texte d'une boîte de saisie */
+/* on peut aussi remplacer placeholder par value*/
+{
+    color:black;
+    font-weight:bold   
+}
+
+input[type=search] 
+{
+    border:none;
+    width:140px;
+    Border-top:1px solid rgb(231, 229, 229);
+    Border-bottom:1px solid rgb(231, 229, 229);
+    margin-right:12px;
+
+}
+input[type=submit]
+{
+    width:100px;
+    background:blue;
+    color:white;
+    border-radius:0 10px 10px 0;
+    border:none;
 }
