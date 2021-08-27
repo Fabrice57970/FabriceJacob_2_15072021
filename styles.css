@@ -58,7 +58,7 @@ img
     height:35px;
     margin-top: 15px;
 }
-ul
+header ul
 {
     display:flex;
     height: 120px;
@@ -68,7 +68,7 @@ ul
     margin-top:0px;
            
 }
-li
+header li
 {
     display:flex;
     justify-content: center;
@@ -94,14 +94,17 @@ li
 }
 
 /* définition de la zone Trouvez votre hébergement */
-.Trouvez h3
+.Trouvez h1
 {
-    height:35px;
+    height:25px;
+    font-size:15px;
+    font-weight: bolder;
     
 }
 .en_plein
 {
     height:25px;
+    font-size:12px;
 }
 .recherche
 {
@@ -111,7 +114,7 @@ li
 }
 .icoloc
 {
-    font-size:10px;
+    font-size:12px;
     background:rgb(231, 229, 229);
     border-radius: 10px 0 0 10px;
     width:25px;
@@ -140,8 +143,87 @@ input[type=search]
 input[type=submit]
 {
     width:100px;
-    background:blue;
+    background:#0065FC;
     color:white;
     border-radius:0 10px 10px 0;
     border:none;
+}
+input[type=submit]:hover
+{
+    background:#a55413;
+
+}
+/* Definiton des zones de filtres */
+.secfiltres
+{
+    height: 85px;
+    display:flex;
+    margin-top:20px;
+}
+.secfiltres ul
+{   display:flex;
+    list-style-type: none;
+}
+.secfiltres h4
+{
+    display:flex;
+    align-items:center;
+}
+.secfiltres li
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.secfiltres i /* mise en page images filtres */
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:25px;
+    width: 42px;
+    height: 44px;
+    background:#DEEBFF;
+    color:#0065FC;
+    margin-right:-12px;
+    
+}
+.secfillib /* mise en page des libellés des filtres */
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: auto;
+    height:40px;
+    padding-left:25px;
+    padding-right:10px;
+    border-radius:0 25px 25px 0;
+    border-top:2px solid #DEEBFF;
+    border-bottom:2px solid #DEEBFF;
+    border-right:2px solid #DEEBFF;
+    font-weight: bold;;
+    
+}
+    /* mise en place hover pour filtres  pas pu faire le changement des deux en même temps*/
+.filtreglobal i:hover
+{
+    background:#F2F2F2;
+    border:1px solid #F2F2F2;
+}
+.filtreglobal div:hover
+{
+    color:rgb(58, 206, 78);
+}
+   
+
+/* mise en page ligne  plus de 500...*/
+.miseinfo /* pas réussi à mettre le i en bleu*/
+{
+    border:2px solid #F2F2F2; 
+    color:grey;
+    
+}
+.filtres p
+{
+    font-size:12px;
 }

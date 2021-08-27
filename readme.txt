@@ -1,0 +1,1 @@
+Ceci est le dossier du projet 2 Openclassroom qui consiste à mettre en page une maquette 'Réservia'
