@@ -49,9 +49,14 @@ header
 display:flex;
 justify-content:space-between;
 height:120px;
-margin-left:5px;
+margin-left:30px;
 margin-right:5px;
 color:#0065FC;
+}
+section
+{
+    margin-left:30px; /* mis 30px a section et header pour respecter le décalage
+    par rappor au footer */
 }
 img
 {
@@ -87,6 +92,10 @@ header li
 {
     color:black;
 }
+.bleugras /*gras pour libellé s'inscrire */
+{
+    font-weight: bold;
+}
 /*bordure bleue*/
 .bordure
 {
@@ -108,7 +117,7 @@ header li
 }
 .recherche
 {
-    height:30px;
+    height:34px;
     display:flex;
     margin-top:5px;
 }
@@ -124,21 +133,22 @@ header li
     
 
 }
-#recherche_ville::placeholder /*pour changer la couleur du texte d'une boîte de saisie */
+/* #recherche_ville::placeholder /*pour changer la couleur du texte d'une boîte de saisie */
 /* on peut aussi remplacer placeholder par value*/
+.zoneville
 {
     color:black;
-    font-weight:bold   
+    font-weight:bold;
+         
 }
 
 input[type=search] 
 {
     border:none;
     width:140px;
-    Border-top:1px solid rgb(231, 229, 229);
-    Border-bottom:1px solid rgb(231, 229, 229);
-    margin-right:12px;
-
+    Border-top:1px solid #DEEBFF;
+    Border-bottom:1px solid #DEEBFF;
+    padding-left:10px;
 }
 input[type=submit]
 {
@@ -154,11 +164,16 @@ input[type=submit]:hover
 
 }
 /* Definiton des zones de filtres */
+.filtres
+{
+    height: 110px;
+}
 .secfiltres
 {
     height: 85px;
     display:flex;
     margin-top:20px;
+    font-size:13px;
 }
 .secfiltres ul
 {   display:flex;
@@ -217,13 +232,63 @@ input[type=submit]:hover
    
 
 /* mise en page ligne  plus de 500...*/
-.miseinfo /* pas réussi à mettre le i en bleu*/
+
+.information
 {
-    border:2px solid #F2F2F2; 
-    color:grey;
-    
+    display: flex;
+    align-items:center;
+}
+.miseinfo /* Il ne faut pas prendre le I cerclé car on fait le cercle
+en css*/
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 20px;
+    width:20px; 
+    color:blue;
+    border-radius:25px 25px 25px 25px;
+    border:1px solid #F2F2F2;
 }
 .filtres p
 {
     font-size:12px;
+}
+/* mise en page footer */
+footer
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:rgb(231, 229, 229);
+    height:180px;
+    
+}
+footer h4
+{
+    margin-left:40px;
+    Margin-top:30px;
+}
+footer ul
+{
+ height:119px;
+ text-decoration: none; 
+}
+footer li
+{
+    list-style-type: none;
+    height: 20px;
+    margin-top:10px;
+}
+footer a
+{
+    text-decoration: none;
+    font-size:0.8em
+}
+.Margbloc1
+{margin-right:500px;
+}
+.Margbloc2
+{
+    margin-right:180px;
 }
