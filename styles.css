@@ -86,23 +86,26 @@ header li
 {
     border-top:1px solid #0065FC;
 }
-
+/* Ok pour la partie header 30/08 à 16:47 commit fait */
 /* définition de la zone Trouvez votre hébergement */
+.Trouvez
+{
+    padding:10px;
+}
 .Trouvez h1
 {
-    height:25px;
+    margin-top: 5px;
     font-size:15px;
     font-weight: bolder;
-    
+        
 }
 .en_plein
 {
-    height:25px;
+    margin-top:5px;
     font-size:12px;
 }
 .recherche
 {
-    height:34px;
     display:flex;
     margin-top:5px;
 }
@@ -112,10 +115,9 @@ header li
     background:rgb(231, 229, 229);
     border-radius: 10px 0 0 10px;
     width:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:11px;
 
 }
 /* #recherche_ville::placeholder /*pour changer la couleur du texte d'une boîte de saisie */
@@ -147,7 +149,7 @@ input[type=submit]:hover
 {
     background:#a55413;
 
-}
+/* }Ok pour définition zone 'trouvez' 30/08 à 17:27 */
 /* Definiton des zones de filtres */
 .filtres
 {
