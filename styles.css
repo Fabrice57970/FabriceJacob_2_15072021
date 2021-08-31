@@ -53,7 +53,8 @@ padding:10px;
 }
 header img
 {
-    height:35px;
+    width:72px;
+    padding-top:15px;
     
 }
 header li
@@ -61,7 +62,7 @@ header li
     display:inline-block;
     padding-left: 15px;
     padding-right:15px;
-    padding-top:25px;
+    padding-top:15px;
           
        
 }
@@ -90,31 +91,32 @@ header li
 /* définition de la zone Trouvez votre hébergement */
 .Trouvez
 {
-    padding:10px;
+    padding-right:10px;
+    padding-left:10px;
 }
 .Trouvez h1
 {
     margin-top: 5px;
-    font-size:15px;
+    font-size:16px;
     font-weight: bolder;
         
 }
 .en_plein
 {
     margin-top:5px;
-    font-size:12px;
+    font-size:11px;
 }
 .recherche
 {
     display:flex;
-    margin-top:5px;
+    margin-top:10px;
 }
 .icoloc
 {
     font-size:12px;
     background:rgb(231, 229, 229);
     border-radius: 10px 0 0 10px;
-    width:25px;
+    width:35px;
     text-align:center;
     padding-top:12px;
     padding-bottom:11px;
@@ -126,20 +128,21 @@ header li
 {
     color:black;
     font-weight:bold;
+    font-family:raleway;
          
 }
 
 input[type=search] 
 {
     border:none;
-    width:140px;
+    width:160px;
     Border-top:1px solid #DEEBFF;
     Border-bottom:1px solid #DEEBFF;
     padding-left:10px;
 }
 input[type=submit]
 {
-    width:100px;
+    width:93px;
     background:#0065FC;
     color:white;
     border-radius:0 10px 10px 0;
@@ -149,109 +152,108 @@ input[type=submit]:hover
 {
     background:#a55413;
 
-/* }Ok pour définition zone 'trouvez' 30/08 à 17:27 */
-/* Definiton des zones de filtres */
-.filtres
-{
-    height: 110px;
 }
-.secfiltres
+/* Vu zone 'trouvez ' ok suite mentorat 30/08 */
+/* Definiton des zones de filtres */
+
+.filtres /* ok 31/08 */
 {
-    height: 85px;
+    padding-right:10px;
+    padding-left:10px;
+}
+.secfiltres /* ok 31/08 */
+{
     display:flex;
     margin-top:20px;
     font-size:13px;
 }
-.secfiltres ul
-{   display:flex;
-    list-style-type: none;
+.secfiltres span /* ok 31/08 */
+{   
+    padding-left:20px;
+   
 }
-.secfiltres h4
+.secfiltres h4 /* ok 31/08*/
 {
     display:flex;
     align-items:center;
+    padding-right:5px;
 }
-.secfiltres li
-{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-.secfiltres i /* mise en page images filtres */
+.secfiltres i /* mise en page images filtres ok 31/08 */
 {
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:25px;
-    width: 42px;
-    height: 44px;
+    border-radius:100%;
+    width: 35px;
+    height: 35px;
     background:#DEEBFF;
     color:#0065FC;
-    margin-right:-12px;
+    margin-right:-15px;
     
 }
-.secfillib /* mise en page des libellés des filtres */
+.secfillib /* mise en page des libellés des filtres  ok 31/08 */
 {
     display:flex;
     align-items:center;
-    justify-content:center;
-    width: auto;
-    height:40px;
     padding-left:25px;
     padding-right:10px;
     border-radius:0 25px 25px 0;
     border-top:2px solid #DEEBFF;
     border-bottom:2px solid #DEEBFF;
     border-right:2px solid #DEEBFF;
-    font-weight: bold;;
+    font-weight: bold;
+    color:black;
     
 }
-    /* mise en place hover pour filtres  pas pu faire le changement des deux en même temps*/
-.filtreglobal i:hover
+.secfiltres a /* ok 31/08 */
 {
-    background:#F2F2F2;
-    border:1px solid #F2F2F2;
+    display:flex;
+    text-decoration:none;
 }
-.filtreglobal div:hover
+.secfiltres a :hover
 {
-    color:rgb(58, 206, 78);
+    font-style:italic;
+    font-size: medium;
+    
 }
-   
+
 
 /* mise en page ligne  plus de 500...*/
-
+.plus500
+{
+font-size: 11px;
+}
 .information
 {
     display: flex;
     align-items:center;
+    padding-top:15px;
+    
 }
-.information span{
-    border: 1px solid #ff0c0c;
-    width: 20px;
-    height: 20px;
+.information p
+{
+    padding-left:10px;
+}
+.information span
+{
+    border: 1px solid #F2F2F2;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
     display: flex;
     align-items: center;
+    font-size:13px;
 }
 
 .miseinfo /* Il ne faut pas prendre le I cerclé car on fait le cercle
 en css*/
 {
-    /* display:flex;
-    justify-content: center;
-    align-items:center;
-    height: 20px;
-    width:20px;  */
     color:blue;
     text-align: center;
     width:100%;
-    /* border-radius:25px 25px 25px 25px;
-    border:1px solid #F2F2F2; */
+    
 }
-.filtres p
-{
-    font-size:12px;
-}
+
 /* mise en page footer */
 footer
 {
