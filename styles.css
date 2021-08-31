@@ -167,11 +167,7 @@ input[type=submit]:hover
     margin-top:20px;
     font-size:13px;
 }
-.secfiltres span /* ok 31/08 */
-{   
-    padding-left:20px;
-   
-}
+
 .secfiltres h4 /* ok 31/08*/
 {
     display:flex;
@@ -209,8 +205,9 @@ input[type=submit]:hover
 {
     display:flex;
     text-decoration:none;
+    margin-left:20px;
 }
-.secfiltres a :hover
+.secfiltres a :hover /* ok 31/08 */
 {
     font-style:italic;
     font-size: medium;
