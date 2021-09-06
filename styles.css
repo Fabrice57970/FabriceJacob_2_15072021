@@ -39,7 +39,7 @@ margin:00px;
 body
 {
     font-family: Raleway;
-    margin-left:5px;
+    
 }
             /* définition du header */
 
@@ -52,26 +52,29 @@ padding:10px;
 }
 header img
 {
-    max-width:20%;
-    margin-top:15px;
+    max-width:90px;
+    margin-top:23px;
+    margin-bottom: 15px;
     
 }   
 header li
 {
     display:inline-block;
-    padding-left: 15px;
-    padding-right:15px;
-    padding-top:15px;
+    padding: 27px;
           
        
+}
+header ul /*nouveau*/
+{
+    display: flex;
+    align-items: center;
 }
 .margemenu
 {
     
     text-decoration: none;
     color:#0065FC;
-    margin-top:25px;
-    
+    margin-left: 20px;    
 }
 .couleurnoir
 {
@@ -91,7 +94,15 @@ header li
 {
     border-top:1px solid #0065fc;
 }
-/* Ok pour la partie header 30/08 à 16:47 commit fait */
+.bordurenoir:hover
+{
+    border-top:1px solid black;
+}
+.borduredoub:hover
+{
+    border-top:2px solid #0065fc;
+}
+/* Ok pour la partie header 06/09 16:20  commit fait*/
 /* définition de la zone Trouvez votre hébergement */
 .Trouvez
 {
