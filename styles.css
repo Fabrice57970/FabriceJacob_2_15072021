@@ -483,46 +483,31 @@ en css*/ {
   cursor: pointer;
   transform: scale(1.05);
 }
-/*.activites img{
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0 ;
-}
-
 
 /* OK MISE EN PAGE JUSQU'AU FOOTER suite mentorat du 06/09 fait le 07/09*/
-/* mise en page footer */
+
+/* mise en page footer 
+Simplification par utilisation <p> plutôt que <ul>
+Marge en % plutôt qu'en pixels. Terminé le 07/09 à 16h30 */
+
+
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(231, 229, 229);
-  padding-bottom: 25px;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+  height: 250px; 
 }
-footer div {
-  flex-direction: column;
-}
-footer h4 {
-  margin-left: 40px;
-  margin-top: 30px;
-}
-/*footer ul
-{
- text-decoration: none;
- padding-bottom:25px; 
-}*/
-footer li {
-  list-style-type: none;
-  margin-top: 10px;
-}
+
 footer a {
   text-decoration: none;
   font-size: 0.8em;
   color: black;
 }
 .Margbloc1 {
-  margin-right: 500px;
+  margin-left: 2%;
 }
 .Margbloc2 {
-  margin-right: 180px;
+  margin-right: 25%;
 }
+
