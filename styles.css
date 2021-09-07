@@ -1,483 +1,528 @@
-*
-{
-margin:00px;
+* {
+  margin: 00px;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('polices/*.eot');
-    src: url('polices/*k.eot?#iefix') format('embedded-opentype'),
-         url('./polices/*k.woff') format('woff'),
-         url('./polices/raleway-variablefont_wght.ttf') format('truetype'),
-         url('./polices/*k.svg#') format('svg');
+  font-family: "Raleway";
+  src: url("polices/*.eot");
+  src: url("polices/*k.eot?#iefix") format("embedded-opentype"),
+    url("./polices/*k.woff") format("woff"),
+    url("./polices/raleway-variablefont_wght.ttf") format("truetype"),
+    url("./polices/*k.svg#") format("svg");
 }
 /* styles généraux*/
-.flexstart
-{
-    display: flex;
-    justify-content:flex-start ;
+h1 {
+  font-size: 22px;
 }
-.flexcentre
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        
+h2 {
+  font-size: 22px;
 }
-.flexbetween
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
+.flexstart {
+  display: flex;
+  justify-content: flex-start;
 }
-.flexaround
-{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+.flexcentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-body
-{
-    font-family: Raleway;
-    
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-            /* définition du header */
+.flexaround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body {
+  font-family: Raleway;
+}
+/* définition du header */
 
-header
-{
-display:flex;
-justify-content:space-between;
-padding:10px;
-
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
-header img
-{
-    max-width:90px;
-    margin-top:23px;
-    margin-bottom: 15px;
-    
-}   
-header li
-{
-    display:inline-block;
-    padding: 27px;
-          
-       
+header img {
+  max-width: 90px;
+  margin-top: 23px;
+  margin-bottom: 15px;
 }
-header ul /*nouveau*/
-{
-    display: flex;
-    align-items: center;
+header li {
+  display: inline-block;
+  padding: 27px;
 }
-.margemenu
-{
-    
-    text-decoration: none;
-    color:#0065FC;
-    margin-left: 20px;    
+header ul /*nouveau*/ {
+  display: flex;
+  align-items: center;
 }
-.couleurnoir
-{
-    color:black;
+.margemenu {
+  text-decoration: none;
+  color: #0065fc;
+  margin-left: 20px;
 }
-.bleugras /*gras pour libellé s'inscrire */
-{
-    font-weight: bold;
+.couleurnoir {
+  color: black;
+}
+.bleugras /*gras pour libellé s'inscrire */ {
+  font-weight: bold;
 }
 /*bordure bleue*/
-.bordure
-{
-    border-top:1px solid transparent;
+.bordure {
+  border-top: 1px solid transparent;
 }
 
-.bordure:hover 
-{
-    border-top:1px solid #0065fc;
+.bordure:hover {
+  border-top: 1px solid #0065fc;
 }
-.bordurenoir:hover
-{
-    border-top:1px solid black;
+.bordurenoir:hover {
+  border-top: 1px solid black;
 }
-.borduredoub:hover
-{
-    border-top:2px solid #0065fc;
+.borduredoub:hover {
+  border-top: 2px solid #0065fc;
 }
 /* Ok pour la partie header 06/09 16:20  commit fait*/
 /* définition de la zone Trouvez votre hébergement */
-.Trouvez
-{
-    padding-right:10px;
-    padding-left:10px;
+.Trouvez {
+  padding: 10px;
 }
-.Trouvez h1
-{
-    margin-top: 5px;
-    font-size:16px;
-    font-weight: bolder;
-        
+.Trouvez h1 {
+  margin-top: 5px;
 }
-.en_plein
-{
-    margin-top:5px;
-    font-size:11px;
+.en_plein {
+  margin-top: 5px;
+  font-size: 15px;
 }
-.recherche
-{
-    display:flex;
-    margin-top:10px;
+.recherche {
+  display: flex;
+  margin-top: 10px;
 }
-.icoloc
-{
-    font-size:12px;
-    background:rgb(231, 229, 229);
-    border-radius: 10px 0 0 10px;
-    width:35px;
-    text-align:center;
-    padding-top:12px;
-    padding-bottom:11px;
-
+.icoloc {
+  font-size: 18px;
+  background: rgb(231, 229, 229);
+  border-radius: 10px 0 0 10px;
+  width: 45px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  height: 24px;
 }
 /* #recherche_ville::placeholder /*pour changer la couleur du texte d'une boîte de saisie */
 /* on peut aussi remplacer placeholder par value*/
-.zoneville
-{
-    color:black;
-    font-weight:bold;
-    font-family:raleway;
-         
+.zoneville {
+  color: black;
+  font-weight: bold;
+  font-family: raleway;
+  font-size: 18px;
 }
 
-input[type=search] 
-{
-    border:none;
-    width:160px;
-    Border-top:1px solid #DEEBFF;
-    Border-bottom:1px solid #DEEBFF;
-    padding-left:10px;
+input[type="search"] {
+  border: none;
+  width: 223px;
+  border-top: 1px solid #deebff;
+  border-bottom: 1px solid #deebff;
+  padding-left: 22px;
 }
-input[type=submit]
-{
-    width:93px;
-    background:#0065FC;
-    color:white;
-    border-radius:0 10px 10px 0;
-    border:none;
+input[type="submit"] {
+  width: 133px;
+  background: #0065fc;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border: none;
 }
-input[type=submit]:hover
-{
-    background:#a55413;
-
+input[type="submit"]:hover {
+  background: #a55413;
 }
-/* Vu zone 'trouvez ' ok suite mentorat 30/08 */
+/* Vu Section 'trouvez ' ok suite mentorat 06/09 */
 /* Definiton des zones de filtres */
 
-.filtres /* ok 31/08 */
-{
-    padding-right:10px;
-    padding-left:10px;
+.filtres /* ok 31/08 */ {
+  padding: 10px;
 }
-.secfiltres /* ok 31/08 */
-{
-    display:flex;
-    margin-top:20px;
-    font-size:13px;
+.secfiltres /* ok 31/08 */ {
+  display: flex;
+  margin-top: 20px;
+  font-size: 13px;
 }
 
-.secfiltres h4 /* ok 31/08*/
-{
-    display:flex;
-    align-items:center;
-    padding-right:5px;
+.secfiltres h4 /* ok 31/08*/ {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  font-size: 18px;
 }
-.secfiltres i /* mise en page images filtres ok 31/08 */
-{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:100%;
-    width: 35px;
-    height: 35px;
-    background:#DEEBFF;
-    color:#0065FC;
-    margin-right:-15px;
-    
+.secfiltres i /* mise en page images filtres ok 31/08 */ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 47px;
+  height: 47px;
+  background: #deebff;
+  color: #0065fc;
+  margin-right: -18px;
+  font-size: 16px;
 }
-.secfillib /* mise en page des libellés des filtres  ok 31/08 */
-{
-    display:flex;
-    align-items:center;
-    padding-left:25px;
-    padding-right:10px;
-    border-radius:0 25px 25px 0;
-    border-top:2px solid #DEEBFF;
-    border-bottom:2px solid #DEEBFF;
-    border-right:2px solid #DEEBFF;
-    font-weight: bold;
-    color:black;
-    
+.secfillib /* mise en page des libellés des filtres  ok 31/08 */ {
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  padding-right: 14px;
+  border-radius: 0 25px 25px 0;
+  border-top: 2px solid #deebff;
+  border-bottom: 2px solid #deebff;
+  border-right: 2px solid #deebff;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
 }
-.secfiltres a /* ok 31/08 */
-{
-    display:flex;
-    text-decoration:none;
-    margin-left:20px;
+.secfiltres a /* ok 31/08 */ {
+  display: flex;
+  text-decoration: none;
+  margin-left: 34px;
 }
-.secfiltres a :hover /* ok 31/08 */
-{
-    font-style:italic;
-    font-size: medium;
-    
+.secfiltres a :hover /* ok 31/08 */ {
+  font-style: italic;
+  font-size: medium;
 }
-
 
 /* mise en page ligne  plus de 500...*/
-.plus500
-{
-font-size: 11px;
+.plus500 {
+  font-size: 15px;
 }
-.information
-{
-    display: flex;
-    align-items:center;
-    padding-top:15px;
-    
+.information {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
 }
-.information p
-{
-    padding-left:10px;
+.information p {
+  padding-left: 16px;
 }
-.information span
-{
-    border: 1px solid #F2F2F2;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    font-size:13px;
+.information span {
+  border: 1px solid #f2f2f2;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
 }
 
 .miseinfo /* Il ne faut pas prendre le I cerclé car on fait le cercle
-en css*/
-{
-    color:blue;
-    text-align: center;
-    width:100%;
-    
+en css*/ {
+  color: blue;
+  text-align: center;
+  width: 100%;
 }
-
+/* Vu mise à jour suite mentorat 06/09 */
 
 /* Début de Correspond à la section des cartes photos Hébergements et populaire*/
- 
-.cartesphotos
-{
-	display: flex;
-	justify-content: space-around;
-	padding: 10px;
-	font-family: raleway;
+.margHebe {
+  margin-top: 30px;
+  padding-left: 25px;
+}
+.cartesphotos {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-family: raleway;
 }
 
 /* Partie Hébergement */
 
-.hebergements
-{
-	flex:2;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	background-color: lightgrey;
-	border-radius: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	height: 650px;
-
+.hebergements {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 650px;
 }
-.bloc1
-{
-	display: flex;
-	justify-content: space-around;
-	height: auto;
-	margin-bottom: 10px;
+.bloc1 {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  margin-bottom: 10px;
 }
-.bloc2
-{
-	display: flex;
-	justify-content: space-around;
-	height: auto;
-	margin-top: 10px;
+.bloc2 {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  margin-top: 10px;
 }
-.Cube1
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 30%;
-	height: 250px;
-	background-color: white;
-	border-radius: 12px;
-	padding: 3px;
-	box-shadow: 0 3px 3px 0 grey;
-
-
+.Cube1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  height: 215px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 3px;
+  box-shadow: 0 3px 3px 0 lightgrey;
 }
-.Cube1:hover
-{
-	cursor: pointer;
-	transform: scale(1.1);
+.Cube1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-.hebergements img{
-	object-fit: cover;
-	width: 100%;
-	height: 150px;
-	border-radius: 15px 15px 0 0 ;
+.hebergements img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
 }
-.textphoto
-{
-	width: 90%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.textphoto {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.textphoto p
-{
-	font-size: 0.9em;
+.textphoto p {
+  font-size: 0.9em;
 }
-.starbleue
-{
-	color: blue;
+.starbleue {
+  color: blue;
 }
-.starvide
-{
-	color: grey;
+.starvide {
+  color: grey;
 }
-.afficher
-{
-font-weight: bold;
+.afficher {
+  font-weight: bold;
+  margin-bottom: 36px;
+  padding-left: 25px;
+  margin-top: 22px;
 }
-
+.afficher a {
+  color: black;
+  text-decoration: none;
+}
+/* Vu mise à jour suite mentorat 06/09 fait le 07/09 */
 /* Partie Populaire */
 
-.popentete
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-right: 10px;
-    margin-top: 12px;
+.popentete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 40px;
 }
-.popentete i 
-{
-	color: black;
+.popentete i {
+  color: black;
 }
-.populaire
-{
-	Display: flex;
-	flex-direction: column;
-	flex: 1;
-	background-color: lightgrey;
-	margin-left: 32px;
-	border-radius: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	height: 650px;
-
+.populaire {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(242, 242, 242);
+  margin-left: 32px;
+  border-radius: 10px;
+  padding-left: 31px;
+  padding-right: 35px;
+  height: 650px;
 }
-.bloc3
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 600px;
-	
+.bloc3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
 }
-.Cube2
-{   display: flex;
-	height: 140px;
-	width: 100%;
-	background-color: white;
-	border-radius: 12px;
-	padding: 3px;
-	box-shadow: 0 3px 3px 0 grey;
-	margin-bottom: 10px;
+.Cube2 {
+  display: flex;
+  height: 140px;
+  width: 96%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 3px;
+  box-shadow: 0 3px 3px 0 lightgrey;
+  margin-bottom: 10px;
 }
-.populaire img
-{
-	object-fit: cover;
-	width: 40%;
-	border-radius: 15px 0 0 15px;
+.populaire img {
+  object-fit: cover;
+  width: 33%;
+  border-radius: 15px 0 0 15px;
 }
-.textepop
-{
-	width: 60%;
-	margin-left: 20px;
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.textepop {
+  width: 60%;
+  margin-left: 20px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.textepop p 
-{
-	font-size: 0.9em;
-    margin-top: 15px;
+.textepop p {
+  font-size: 0.9em;
+  margin-top: 26px;
 }
-.textepop h3
-{
-	height: 10px;
-    margin-top: 10px;
+.textepop h3 {
+  height: 10px;
+  margin-top: 10px;
 }
-.etoile
-{
-	margin-top: 45px;
+.etoile {
+  margin-top: 45px;
 }
-.Cube2:hover
-{
-	cursor: pointer;
-	transform: scale(1.05);
+.Cube2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 /* Fin de Correspond à la section des cartes photos Hébergements et populaire*/
+/* mise à jour suite mentorat 06/09 ok le 07/09 */
+
+/* Section activités */
+.activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.activites h1 {
+  margin-bottom: 15px;
+}
+.bloc4 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.imageactivite1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 530px;
+  border-radius: 15px 15px 0 0;
+}
+
+.cube4 {
+  width: 25%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+.texteactivite {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 15px;
+}
+.bloc5 {
+  height: 600px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imageactivite2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+  border-radius: 15px 15px 0 0;
+}
+.imageactivite3 img {
+  object-fit: cover;
+  width: 100%;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
+}
+.cube5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+.cube6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+
+.bloc6 {
+  width: 20%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cube7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px lightgrey;
+}
+.imageactivite4 img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+.imageactivite5 img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+}
+.cube4:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.cube5:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.cube6:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.cube7:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/*.activites img{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0 ;
+}
 
 
-
-/* OK MISE EN PAGE JUSQU'AU FOOTER 31/08 12H05*/
+/* OK MISE EN PAGE JUSQU'AU FOOTER suite mentorat du 06/09 fait le 07/09*/
 /* mise en page footer */
-footer
-{
-    display:flex;
-    justify-content:space-between;
-    background-color:rgb(231, 229, 229);
-    padding-bottom: 25px;
-        
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(231, 229, 229);
+  padding-bottom: 25px;
 }
-footer div
-{
-flex-direction:column;
+footer div {
+  flex-direction: column;
 }
-footer h4
-{
-    margin-left:40px;
-    Margin-top:30px;
+footer h4 {
+  margin-left: 40px;
+  margin-top: 30px;
 }
 /*footer ul
 {
  text-decoration: none;
  padding-bottom:25px; 
 }*/
-footer li
-{
-    list-style-type: none;
-    margin-top:10px;
+footer li {
+  list-style-type: none;
+  margin-top: 10px;
 }
-footer a
-{
-    text-decoration: none;
-    font-size:0.8em;
-    color:black;
+footer a {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: black;
 }
-.Margbloc1
-{margin-right:500px;
+.Margbloc1 {
+  margin-right: 500px;
 }
-.Margbloc2
-{
-margin-right:180px;
+.Margbloc2 {
+  margin-right: 180px;
 }
