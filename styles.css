@@ -13,10 +13,9 @@
 h1 {
   font-size: 22px;
 }
-h2 {
-  font-size: 22px;
+h3{
+  font-size:1.11em;
 }
-
 .flexstart {
   display: flex;
   justify-content: flex-start;
@@ -130,6 +129,7 @@ input[type="submit"] {
   width: 133px;
   background: #0065fc;
   color: white;
+  font-size:1em;
   border-radius: 0 10px 10px 0;
   border: none;
 }
@@ -264,8 +264,8 @@ en css*/ {
   height: 215px;
   background-color: white;
   border-radius: 15px;
-  padding: 3px;
-  box-shadow: 0 3px 3px 0 lightgrey;
+  padding: 5px;
+  box-shadow: 0px 0px 10px lightgrey;
 }
 .Cube1:hover {
   cursor: pointer;
@@ -274,24 +274,27 @@ en css*/ {
 .hebergements img {
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 60%;
   border-radius: 15px 15px 0 0;
 }
 .textphoto {
   width: 90%;
-  height: 100px;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top:5px;
 }
 .textphoto p {
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 .starbleue {
-  color: blue;
+  color: #0065fc;
+  font-size:0.7em
 }
 .starvide {
   color: grey;
+  font-size:0.7em
 }
 .afficher {
   font-weight: bold;
@@ -339,8 +342,8 @@ en css*/ {
   width: 96%;
   background-color: white;
   border-radius: 15px;
-  padding: 3px;
-  box-shadow: 0 3px 3px 0 lightgrey;
+  padding: 5px;
+  box-shadow: 0px 0px 10px lightgrey;
   margin-bottom: 10px;
 }
 .populaire img {
@@ -357,7 +360,7 @@ en css*/ {
   justify-content: space-around;
 }
 .textepop p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   margin-top: 26px;
 }
 .textepop h3 {
