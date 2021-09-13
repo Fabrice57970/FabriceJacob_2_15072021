@@ -9,12 +9,26 @@
     url("./polices/raleway-variablefont_wght.ttf") format("truetype"),
     url("./polices/*k.svg#") format("svg");
 }
+@font-face {
+  font-family: "Ralewaybold";
+  src: url("polices/*.eot");
+  src: url("polices/*k.eot?#iefix") format("embedded-opentype"),
+    url("./polices/*k.woff") format("woff"),
+    url("./polices/raleway-extrabold.ttf") format("truetype"),
+    url("./polices/*k.svg#") format("svg");
+}
+
 /* styles généraux*/
 h1 {
   font-size: 22px;
+  font-family: Ralewaybold;
 }
-h3{
-  font-size:1.11em;
+h3 {
+  font-size: 1.11em;
+  font-family: Ralewaybold;
+  }
+H4{
+  font-family: ralewaybold;
 }
 .flexstart {
   display: flex;
@@ -43,11 +57,11 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 40px;
 }
 header img {
   max-width: 110px;
-  
 }
 header li {
   display: inline-block;
@@ -80,7 +94,7 @@ header ul /*nouveau*/ {
   border-top: 1px solid black;
 }
 .borduredoub:hover {
-  border-top: 2px solid #0065fc;
+  border-top: 1px solid #0065fc;
 }
 /* Ok pour la partie header 06/09 16:20  commit fait*/
 /* définition de la zone Trouvez votre hébergement */
@@ -113,7 +127,7 @@ header ul /*nouveau*/ {
 .zoneville {
   color: black;
   font-weight: bold;
-  font-family: raleway;
+  font-family: ralewaybold;
   font-size: 18px;
 }
 
@@ -128,7 +142,7 @@ input[type="submit"] {
   width: 133px;
   background: #0065fc;
   color: white;
-  font-size:1em;
+  font-size: 1em;
   border-radius: 0 10px 10px 0;
   border: none;
 }
@@ -152,6 +166,7 @@ input[type="submit"]:hover {
   align-items: center;
   padding-right: 5px;
   font-size: 18px;
+  font-family: ralewaybold;
 }
 .secfiltres i /* mise en page images filtres ok 31/08 */ {
   display: flex;
@@ -177,6 +192,7 @@ input[type="submit"]:hover {
   font-weight: bold;
   color: black;
   font-size: 18px;
+  font-family: ralewaybold;
 }
 .secfiltres a /* ok 31/08 */ {
   display: flex;
@@ -284,24 +300,25 @@ en css*/ {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top:5px;
+  padding-top: 5px;
 }
 .textphoto p {
   font-size: 0.85em;
 }
 .starbleue {
   color: #0065fc;
-  font-size:0.7em
+  font-size: 0.7em;
 }
 .starvide {
   color: grey;
-  font-size:0.7em
+  font-size: 0.7em;
 }
 .afficher {
   font-weight: bold;
   margin-bottom: 36px;
   padding-left: 25px;
   margin-top: 22px;
+  font-family: ralewaybold;
 }
 .afficher a {
   color: black;
@@ -345,7 +362,6 @@ en css*/ {
   border-radius: 15px;
   padding: 5px;
   box-shadow: 0px 0px 10px lightgrey;
-  
 }
 .populaire img {
   object-fit: cover;
@@ -494,24 +510,32 @@ en css*/ {
 Simplification par utilisation <p> plutôt que <ul>
 Marge en % plutôt qu'en pixels. Terminé le 07/09 à 16h30 */
 
-
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 0% 30% 28% 28%;
+  grid-template-rows: 200px;
+  grid-gap: 3%;
   background-color: rgb(242, 242, 242);
-  height: 250px; 
 }
-
+footer h4 {
+  padding-bottom: 15px;
+}
+footer li {
+  list-style-type: none;
+  padding-bottom: 15px;
+}
 footer a {
   text-decoration: none;
-  font-size: 0.8em;
   color: black;
+  font-size: 0.8em;
 }
-.Margbloc1 {
-  margin-left: 2%;
+footer ul {
+  padding: 0;
 }
-.Margbloc2 {
-  margin-right: 25%;
+.apropos {
+  grid-column-start: 2;
 }
-
+footer div {
+  align-self: center;
+  height: 121px;
+}
