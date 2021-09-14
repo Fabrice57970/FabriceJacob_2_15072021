@@ -54,27 +54,36 @@ body {
 }
 /* définition du header */
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
+header{
+	display: grid;
+	grid-template: 75px / 20% 50% 30%;
+	padding: 0 40px;
+	padding-top: 10px;
+	
 }
+header nav{
+	grid-column-start: 3;
+	
+}
+header ul{
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr;
+	}
+
+header li{
+		list-style-type: none;
+		text-align: center;
+		padding-top: 20px;
+		}
+
 header img {
   max-width: 110px;
-}
-header li {
-  display: inline-block;
-  padding: 27px;
-}
-header ul /*nouveau*/ {
-  display: flex;
-  align-items: center;
-}
+  }
 .margemenu {
   text-decoration: none;
   color: #0065fc;
   margin-left: 20px;
+  
 }
 .couleurnoir {
   color: black;
@@ -94,7 +103,52 @@ header ul /*nouveau*/ {
   border-top: 1px solid black;
 }
 .borduredoub:hover {
+  border-top: 1px solid #0065fc;}
+
+
+
+/* ancien header, à supprimer
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+header img {
+  max-width: 110px;
+}
+header li {
+  display: inline-block;
+  padding: 27px;
+}
+header ul /*nouveau {
+  display: flex;
+  align-items: center;
+}
+.margemenu {
+  text-decoration: none;
+  color: #0065fc;
+  margin-left: 20px;
+}
+.couleurnoir {
+  color: black;
+}
+.bleugras /*gras pour libellé s'inscrire  {
+  font-weight: bold;
+}
+/*bordure bleue
+.bordure {
+  border-top: 1px solid transparent;
+}
+
+.bordure:hover {
   border-top: 1px solid #0065fc;
+}
+.bordurenoir:hover {
+  border-top: 1px solid black;
+}
+.borduredoub:hover {
+  border-top: 1px solid #0065fc;/*
 }
 /* Ok pour la partie header 06/09 16:20  commit fait*/
 /* définition de la zone Trouvez votre hébergement */
@@ -527,7 +581,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: black;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 footer ul {
   padding: 0;
