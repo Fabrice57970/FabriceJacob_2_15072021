@@ -108,49 +108,6 @@ header img {
   border-top: 1px solid #0065fc;
 }
 
-/* ancien header, à supprimer
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-}
-header img {
-  max-width: 110px;
-}
-header li {
-  display: inline-block;
-  padding: 27px;
-}
-header ul /*nouveau {
-  display: flex;
-  align-items: center;
-}
-.margemenu {
-  text-decoration: none;
-  color: #0065fc;
-  margin-left: 20px;
-}
-.couleurnoir {
-  color: black;
-}
-.bleugras /*gras pour libellé s'inscrire  {
-  font-weight: bold;
-}
-/*bordure bleue
-.bordure {
-  border-top: 1px solid transparent;
-}
-
-.bordure:hover {
-  border-top: 1px solid #0065fc;
-}
-.bordurenoir:hover {
-  border-top: 1px solid black;
-}
-.borduredoub:hover {
-  border-top: 1px solid #0065fc;/*
-}
 /* Ok pour la partie header 06/09 16:20  commit fait*/
 /* définition de la zone Trouvez votre hébergement */
 .Trouvez {
@@ -171,7 +128,7 @@ header ul /*nouveau {
   font-size: 18px;
   background: rgb(231, 229, 229);
   border-radius: 10px 0 0 10px;
-  width: 45px;
+  width: 50px;
   text-align: center;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -188,21 +145,25 @@ header ul /*nouveau {
 
 input[type="search"] {
   border: none;
-  width: 223px;
+  width: 235px;
   border-top: 1px solid #deebff;
   border-bottom: 1px solid #deebff;
   padding-left: 22px;
 }
-input[type="submit"] {
-  width: 133px;
+button[type="submit"] {
+  width: 135px;
   background: #0065fc;
   color: white;
   font-size: 1em;
   border-radius: 0 10px 10px 0;
   border: none;
 }
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background: #a55413;
+}
+.Louperecherche:before{
+  content: "Rechercher";
+
 }
 /* Vu Section 'trouvez ' ok suite mentorat 06/09 */
 /* Definiton des zones de filtres */
@@ -641,13 +602,43 @@ footer div {
   }
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
+ /*partie zone de recherche 16/09 */
+ .icoloc {
+  font-size: 18px;
+  background: rgb(231, 229, 229);
+  border-radius: 10px 0 0 10px;
+  width: 50px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  height: 24px;
+}
+.Louperecherche{
+  width: 50px;
+}
+.Louperecherche:before{
+  font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+  }
+button[type="submit"] {
+  width: 50px;
+  background: #0065fc;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+
+  /* partie photos */
 
   .cartesphotos {
-      flex-direction: column-reverse;
-      padding: 0;
-    }
-  
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
   .populaire {
     display: flex;
     flex-direction: column;
@@ -657,41 +648,37 @@ footer div {
     border-radius: 0px;
     padding-left: 18px;
     padding-right: 18px;
-    
   }
-  
-  
+
   .hebergements {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      border-radius: 0px;
-      padding-left: 18px;
-      padding-right: 18px;
-      background-color: white;
-      }
-  
-  
-    .bloc1 {
-      flex-direction: column;
-      margin-bottom: 0;
-    }
-    .bloc2 {
-      flex-direction: column;
-      margin-top: 0;
-    }
-    .afficher{
-          margin-bottom: 0;
-          padding-left: 0;
-    }
-  .activites{
-  
-      margin-bottom:0 ;
-      padding-left:18px;
-      padding-right: 18px;
-    }
-  
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: white;
+  }
+
+  .bloc1 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .bloc2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .afficher {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .activites {
+    margin-bottom: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   .imageactivite1 img {
     object-fit: cover;
     width: 100%;
@@ -704,7 +691,7 @@ footer div {
     height: 134px;
     border-radius: 15px 15px 0 0;
   }
-  
+
   .imageactivite3 img {
     object-fit: cover;
     width: 100%;
@@ -723,52 +710,73 @@ footer div {
     height: 134px;
     border-radius: 15px 15px 0 0;
   }
-  
+
   .texteactivite {
-        height: 56px;
-      }
-   
-    
-    .bloc4 {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .bloc5 {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .bloc6 {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .Cube1 {
-      width: 100%;
-      padding: 0;
-      margin-bottom: 12px;
-      
-    }
-    .cube4 {
-      width: 100%;
-      height: 190px;
-      margin-bottom: 22px;
-    }
-    .cube5 {
-      width: 100%;
-      height: 190px;
-      margin-bottom: 22px;
-    }
-    .cube6 {
-      width: 100%;
-      height: 190px;
-      margin-bottom: 22px;
-    }
-    .cube7 {
-      width: 100%;
-      height: 190px;
-      margin-bottom: 22px;   
-  
-    }
+    height: 56px;
   }
+
+  .bloc4 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .bloc5 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .bloc6 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .Cube1 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  .cube4 {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 22px;
+  }
+  .cube5 {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 22px;
+  }
+  .cube6 {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 22px;
+  }
+  .cube7 {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 22px;
+  }
+  /* Fin de la partie photos < 650px*/
+
+/* Footer <650px */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 486px;
+}
+
+footer div {
+    align-self: flex-start;
+    height: auto;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    }
+
+
+/* fin footer ok 16/09 */
+
+
+
+}
