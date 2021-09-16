@@ -123,6 +123,7 @@ header img {
 .recherche {
   display: flex;
   margin-top: 15px;
+  height:50px;
 }
 .icoloc {
   font-size: 18px;
@@ -130,9 +131,9 @@ header img {
   border-radius: 10px 0 0 10px;
   width: 50px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 16px;
   padding-bottom: 11px;
-  height: 24px;
+  height: 23px;
 }
 /* #recherche_ville::placeholder /*pour changer la couleur du texte d'une boîte de saisie */
 /* on peut aussi remplacer placeholder par value*/
@@ -146,8 +147,8 @@ header img {
 input[type="search"] {
   border: none;
   width: 235px;
-  border-top: 1px solid #deebff;
-  border-bottom: 1px solid #deebff;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
   padding-left: 22px;
 }
 button[type="submit"] {
@@ -209,9 +210,9 @@ button[type="submit"]:hover {
   padding-left: 26px;
   padding-right: 14px;
   border-radius: 0 25px 25px 0;
-  border-top: 2px solid #deebff;
-  border-bottom: 2px solid #deebff;
-  border-right: 2px solid #deebff;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  border-right: 2px solid #d9d9d9;
   font-weight: bold;
   color: black;
   font-size: 18px;
@@ -610,9 +611,9 @@ footer div {
   border-radius: 10px 0 0 10px;
   width: 50px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 16px;
   padding-bottom: 11px;
-  height: 24px;
+  height: 23px;
 }
 .Louperecherche{
   width: 50px;
@@ -622,13 +623,21 @@ footer div {
     font-weight: 900;
     content: "\f002";
   }
+  input[type="search"] {
+    border: none;
+    width: 244px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding-left: 22px;
+  }
 button[type="submit"] {
   width: 50px;
   background: #0065fc;
   color: white;
   font-size: 1em;
-  border-radius: 10px;
+  border-radius: 14px;
   border: none;
+  margin-left:-9px;
 }
 
 
