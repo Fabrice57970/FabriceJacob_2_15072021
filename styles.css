@@ -118,7 +118,7 @@ header img {
 }
 .en_plein {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 16px;
 }
 .recherche {
   display: flex;
@@ -604,7 +604,92 @@ footer div {
 }
 
 @media only screen and (max-width: 650px) {
+
+/*Partie header */
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template: none;
+    height: 150px;
+    padding-right: 20px;
+    padding-left: 20px;
+  
+  }
+    header nav {
+    display: flex;
+    grid-column-start: none;
+  }
+  header ul {
+    display: flex;
+    grid-template-columns: none;
+  
+  }
+  .borduredoub{
+    order: 1;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    padding-top: 20px;
+  }
+  .bordure {
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    top:112px;
+    left: 0px;
+  }
+  
+  
+  .bordurenoir{
+    border-bottom: 1px solid transparent;
+      position: absolute;
+    top: 112px;
+    right: 60px;
+  }
+  header li {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  
+  header img {
+    max-width: 90px;
+  }
+  .margemenu {
+    text-decoration: none;
+    color: #0065fc;
+    margin-left: 20px;
+    
+  }
+  .couleurnoir {
+    color: black;
+  }
+  .bleugras /*gras pour libellé s'inscrire */ {
+    font-weight: bold;
+  }
+  /*bordure bleue*/
+  
+  
+  .bordure:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+  }
+  .bordurenoir:hover {
+    border-bottom: 2px solid black;
+    border-top: none;
+  }
+  
+  .borduredoub:hover {
+    border-top: 2px solid #0065fc;
+    
+  }
+
  /*partie zone de recherche 16/09 */
+
+ .Trouvez{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
  .icoloc {
   font-size: 18px;
   background: rgb(231, 229, 229);
@@ -639,8 +724,12 @@ button[type="submit"] {
   border: none;
   margin-left:-9px;
 }
-
-
+ /* partie filtres */
+ .filtres /* ok 31/08 */ {
+  padding-right:20px;
+  padding-left: 20px;
+  margin-top: 40px;
+}
   /* partie photos */
 
   .cartesphotos {
