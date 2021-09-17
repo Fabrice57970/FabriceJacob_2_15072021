@@ -17,7 +17,14 @@
     url("./polices/raleway-extrabold.ttf") format("truetype"),
     url("./polices/*k.svg#") format("svg");
 }
-
+@font-face {
+  font-family: "Ralewaypresquebold";
+  src: url("polices/*.eot");
+  src: url("polices/*k.eot?#iefix") format("embedded-opentype"),
+    url("./polices/*k.woff") format("woff"),
+    url("./polices/raleway-Medium.ttf") format("truetype"),
+    url("./polices/*k.svg#") format("svg");
+}
 /* styles généraux*/
 h1 {
   font-size: 22px;
@@ -61,7 +68,7 @@ body {
 
 header {
   display: grid;
-  grid-template: 75px / 20% 50% 30%;
+  grid-template: 115px / 20% 40% 40%;
   padding: 0 40px;
   padding-top: 10px;
 }
@@ -76,11 +83,12 @@ header ul {
 header li {
   list-style-type: none;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 header img {
-  max-width: 110px;
+  max-width: 96px;
+  padding-top: 30px;
 }
 .margemenu {
   text-decoration: none;
@@ -89,13 +97,15 @@ header img {
 }
 .couleurnoir {
   color: black;
+  font-family: 'Ralewaypresquebold';
 }
 .bleugras /*gras pour libellé s'inscrire */ {
-  font-weight: bold;
+  font-family: ralewaybold;
 }
 /*bordure bleue*/
 .bordure {
   border-top: 1px solid transparent;
+  font-family: 'Ralewaypresquebold'
 }
 
 .bordure:hover {
@@ -629,21 +639,21 @@ footer div {
     position: absolute;
     top: 5px;
     right: 20px;
-    padding-top: 20px;
+    padding-top: 36px;
   }
   .bordure {
     border-bottom: 1px solid transparent;
     position: absolute;
-    top:112px;
-    left: 0px;
+    top:115px;
+    left: 20px;
   }
   
   
   .bordurenoir{
     border-bottom: 1px solid transparent;
       position: absolute;
-    top: 112px;
-    right: 60px;
+    top: 116px;
+    right: 62px;
   }
   header li {
     list-style-type: none;
@@ -653,7 +663,8 @@ footer div {
   }
   
   header img {
-    max-width: 90px;
+    max-width: 96px;
+    padding-top: 13px;
   }
   .margemenu {
     text-decoration: none;
