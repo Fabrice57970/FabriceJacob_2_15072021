@@ -67,33 +67,31 @@ body {
 /* définition du header */
 
 header {
-  display: grid;
-  grid-template: 115px / 20% 40% 40%;
-  padding: 0 40px;
-  padding-top: 10px;
-}
-header nav {
-  grid-column-start: 3;
-}
-header ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 57.5px;
+  }
+
+header ul{
+
 }
 
 header li {
+  display: inline-block;
   list-style-type: none;
-  text-align: center;
-  padding-top: 30px;
-}
+  width: 115px;
+  margin: 0px 20px;
+  
+  }
 
 header img {
   max-width: 96px;
-  padding-top: 30px;
+  margin: 30px 30px 02px 0px;
 }
 .margemenu {
   text-decoration: none;
   color: #0065fc;
-  margin-left: 20px;
+ 
 }
 .couleurnoir {
   color: black;
@@ -104,20 +102,30 @@ header img {
 }
 /*bordure bleue*/
 .bordure {
-  border-top: 1px solid transparent;
-  font-family: 'Ralewaypresquebold'
+  border-top: 2px solid transparent;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Ralewaypresquebold';
 }
-
+.bordurenoir {
+  border-top: 2px solid transparent;
+  text-align: center;
+  padding-top: 30px;
+}
+.borduredoub {
+  border-top: 2px solid transparent;
+  text-align: center;
+  padding-top: 30px;
+}
 .bordure:hover {
-  border-top: 1px solid #0065fc;
+  border-top: 2px solid #0065fc;
 }
 .bordurenoir:hover {
-  border-top: 1px solid black;
+  border-top: 2px solid #0065fc;
 }
 .borduredoub:hover {
-  border-top: 1px solid #0065fc;
+  border-top: 2px solid #0065fc;
 }
-
 /* Ok pour la partie header 06/09 16:20  commit fait*/
 /* définition de la zone Trouvez votre hébergement */
 .Trouvez {
@@ -578,9 +586,8 @@ footer div {
 @media only screen and (max-width: 1080px) {
   header {
     display: grid;
-    grid-template: 75px / 1fr 1fr 3fr;
-    padding: 0 40px;
-    padding-top: 10px;
+    padding: 0 58px;
+    
   }
 }
 
@@ -623,6 +630,7 @@ footer div {
     height: 150px;
     padding-right: 20px;
     padding-left: 20px;
+    padding: 0px;
   
   }
     header nav {
@@ -632,44 +640,52 @@ footer div {
   header ul {
     display: flex;
     grid-template-columns: none;
+    padding: 0;
   
   }
   .borduredoub{
     order: 1;
     position: absolute;
-    top: 5px;
-    right: 20px;
-    padding-top: 36px;
+    top: 0px;
+    right: 0px;
+    padding-top: 32px;
   }
   .bordure {
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid #0065fc;
     position: absolute;
-    top:115px;
-    left: 20px;
+    top:66px;
+    left: 1px;
+    width: 50%;
+    padding-bottom: 10px;
   }
   
   
   .bordurenoir{
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid lightgrey;
       position: absolute;
-    top: 116px;
-    right: 62px;
+    top: 66px;
+    right: 1px;
+    width: 50%;
+    padding-bottom: 10px;
   }
   header li {
     list-style-type: none;
     text-align: center;
     padding-top: 0;
     padding-bottom: 20px;
+    margin: 0;
   }
   
   header img {
     max-width: 96px;
-    padding-top: 13px;
+    padding-top: 24px;
+    margin: 0;
+    padding-left: 20px;
   }
   .margemenu {
     text-decoration: none;
     color: #0065fc;
-    margin-left: 20px;
+    
     
   }
   .couleurnoir {
@@ -681,17 +697,19 @@ footer div {
   /*bordure bleue*/
   
   
+  /* Bordures hover du bas mise en attente car je 
+  ne sais pas si elle existent réellement*/
   .bordure:hover {
-    border-bottom: 2px solid #0065fc;
+   /*border-bottom: 3px solid #0065fc;*/
     border-top: none;
   }
   .bordurenoir:hover {
-    border-bottom: 2px solid black;
+    /*border-bottom: 3px solid #0065fc;*/
     border-top: none;
   }
   
   .borduredoub:hover {
-    border-top: 2px solid #0065fc;
+    border-top: 3px solid #0065fc;
     
   }
 
