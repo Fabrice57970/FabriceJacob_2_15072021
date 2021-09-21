@@ -36,10 +36,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.11em;
-  font-family: Ralewaybold;
+  font-size: 1em;
+  font-family: Ralewaypresquebold;
 }
-H4 {
+h4 {
   font-family: ralewaybold;
 }
 .flexstart {
@@ -288,16 +288,17 @@ en css*/ {
 
 /* Début de Correspond à la section des cartes photos Hébergements et populaire*/
 .margHebe {
-  margin-top: 30px;
+  margin-top: 40px;
   padding-left: 25px;
   margin-bottom: 20px;
 }
 .cartesphotos {
   display: flex;
-  justify-content: space-around;
-  padding: 0 40px;
+  justify-content: space-between;
   font-family: raleway;
   margin-top: 40px;
+  padding-left:50px;
+  padding-right: 50px;
 }
 
 /* Partie Hébergement */
@@ -310,8 +311,9 @@ en css*/ {
   background-color: rgb(242, 242, 242);
   border-radius: 10px;
   padding-left: 20px;
-  padding-right: 20px;
-  height: 650px;
+  padding-right: 16px;
+  height: 625px;
+  margin-right: 10px;
 }
 .bloc1 {
   display: flex;
@@ -330,7 +332,7 @@ en css*/ {
   flex-direction: column;
   align-items: center;
   width: 28%;
-  height: 215px;
+  height: 190px;
   background-color: white;
   border-radius: 15px;
   padding: 5px;
@@ -351,7 +353,7 @@ en css*/ {
   height: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 5px;
 }
 .textphoto p {
@@ -359,18 +361,19 @@ en css*/ {
 }
 .starbleue {
   color: #0065fc;
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 .starvide {
-  color: grey;
-  font-size: 0.7em;
+  color: lightgrey;
+  font-size: 0.75em;
 }
 .afficher {
-  font-weight: bold;
   margin-bottom: 36px;
   padding-left: 25px;
   margin-top: 22px;
-  font-family: ralewaybold;
+  font-family: ralewaypresquebold;
+  font-size:1.1em;
+  font-weight:bold;
 }
 .afficher a {
   color: black;
@@ -383,8 +386,9 @@ en css*/ {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10px;
-  margin-top: 34px;
+  padding-left: 30px;
+  padding-right: 35px;
+  margin-top: 40px;
 }
 .popentete i {
   color: black;
@@ -396,20 +400,19 @@ en css*/ {
   background-color: rgb(242, 242, 242);
   margin-left: 32px;
   border-radius: 10px;
-  padding-left: 31px;
-  padding-right: 35px;
-  height: 650px;
+    height: 625px;
 }
 .bloc3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items:center;
   height: 600px;
 }
 .Cube2 {
   display: flex;
-  height: 140px;
-  width: 96%;
+  height: 145px;
+  width: 82%;
   background-color: white;
   border-radius: 15px;
   padding: 5px;
@@ -438,6 +441,11 @@ en css*/ {
 }
 .etoile {
   margin-top: 45px;
+  display:flex;
+}
+.etoile1{
+  display:flex;
+
 }
 .Cube2:hover {
   cursor: pointer;
