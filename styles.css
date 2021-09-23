@@ -36,7 +36,7 @@
 /* styles généraux*/
 h1 {
   font-size: 22px;
-  font-family: Ralewaypresquebold;
+  font-family: Ralewaybold;
 }
 h2 {
   font-size: 22px;
@@ -48,7 +48,7 @@ h3 {
   font-family: Ralewaypresquebold;
 }
 h4 {
-  font-family: ralewaybold;
+  font-family: ralewayextrabold;
 }
 .flexstart {
   display: flex;
@@ -88,8 +88,8 @@ header ul{
 header li {
   display: inline-block;
   list-style-type: none;
-  width: 115px;
-  margin: 0px 08px;
+  width: 141px;
+  
   
   }
 
@@ -107,7 +107,7 @@ header img {
   font-family: 'Ralewaypresquebold';
 }
 .bleugras /*gras pour libellé s'inscrire */ {
-  font-family: ralewayextrabold;
+  font-family: ralewaybold;
 }
 /*bordure bleue*/
 .bordure {
@@ -149,6 +149,7 @@ header img {
   margin-top: 8px;
   font-size: 16px;
   padding-left: 59px;
+  font-family:ralewaypresquebold;
 }
 .recherche {
   display: flex;
@@ -250,12 +251,12 @@ button[type="submit"]:hover {
   font-weight: bold;
   color: black;
   font-size: 18px;
-  font-family: ralewaypresquebold;
+  font-family: ralewaybold;
 }
 .secfiltres a /* ok 31/08 */ {
   display: flex;
   text-decoration: none;
-  margin-left: 34px;
+  margin-left: 30px;
   
 }
 .secfiltres a :hover /* ok 31/08 */ {
@@ -266,6 +267,7 @@ button[type="submit"]:hover {
 /* mise en page ligne  plus de 500...*/
 .plus500 {
   font-size: 16px;
+  font-family:ralewaypresquebold;
 }
 .information {
   display: flex;
@@ -296,9 +298,9 @@ en css*/ {
 
 /* Début de Correspond à la section des cartes photos Hébergements et populaire*/
 .margHebe {
-  margin-top: 40px;
-  padding-left: 25px;
-  margin-bottom: 20px;
+  margin-top: 41px;
+  padding-left: 18px;
+  
 }
 .cartesphotos {
   display: flex;
@@ -315,9 +317,9 @@ en css*/ {
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(242, 242, 242);
-  border-radius: 10px;
+  border-radius: 20px;
   padding-left: 20px;
   padding-right: 16px;
   height: 625px;
@@ -327,13 +329,13 @@ en css*/ {
   display: flex;
   justify-content: space-around;
   height: auto;
-  margin-bottom: 10px;
+  
 }
 .bloc2 {
   display: flex;
   justify-content: space-around;
   height: auto;
-  margin-top: 10px;
+  
 }
 .Cube1 {
   display: flex;
@@ -342,7 +344,7 @@ en css*/ {
   width: 28%;
   height: 190px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px;
   box-shadow: 0px 0px 10px lightgrey;
 }
@@ -376,10 +378,10 @@ en css*/ {
   font-size: 0.75em;
 }
 .afficher {
-  margin-bottom: 36px;
+  margin-bottom: 46px;
   padding-left: 25px;
-  margin-top: 22px;
-  font-family: ralewaypresquebold;
+  margin-top: 12px;
+  font-family: ralewayextrabold;
   font-size:1.1em;
   font-weight:bold;
 }
@@ -408,7 +410,7 @@ en css*/ {
   flex: 1;
   background-color: rgb(242, 242, 242);
   margin-left: 32px;
-  border-radius: 10px;
+  border-radius: 20px;
     height: 625px;
 }
 .bloc3 {
@@ -424,7 +426,7 @@ en css*/ {
   height: 135px;
   width: 82%;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px;
   box-shadow: 0px 0px 10px lightgrey;
 }
@@ -466,41 +468,47 @@ en css*/ {
 
 /* Section activités */
 .activites {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0 54px;
 }
 .activites h1 {
   margin-bottom: 15px;
 }
 .bloc4 {
-  height: 600px;
+  height: 445px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 18px;
+  padding-top: 22px;
 }
 .imageactivite1 img {
   object-fit: cover;
   width: 100%;
-  height: 530px;
+  height: 390px;
   border-radius: 15px 15px 0 0;
 }
 
 .cube4 {
-  width: 25%;
-  border-radius: 15px;
+  width: 22.65%;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px lightgrey;
 }
 .texteactivite {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 55px;
+  padding-left: 15px;
+}
+.texteactivite1 {
+  display: flex;
+  align-items: center;
+  height: 51px;
   padding-left: 15px;
 }
 .bloc5 {
-  height: 600px;
-  width: 20%;
+  height: 445px;
+  width: 22.65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -508,33 +516,33 @@ en css*/ {
 .imageactivite2 img {
   object-fit: cover;
   width: 100%;
-  height: 230px;
+  height: 178px;
   border-radius: 15px 15px 0 0;
 }
 .imageactivite3 img {
   object-fit: cover;
   width: 100%;
-  height: 170px;
+  height: 105px;
   border-radius: 15px 15px 0 0;
 }
 .cube5 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px lightgrey;
 }
 .cube6 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px lightgrey;
 }
 
 .bloc6 {
-  width: 20%;
-  height: 600px;
+  width: 22.65%;
+  height: 445px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -543,19 +551,19 @@ en css*/ {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px lightgrey;
 }
 .imageactivite4 img {
   object-fit: cover;
   width: 100%;
-  height: 200px;
+  height: 140px;
   border-radius: 15px 15px 0 0;
 }
 .imageactivite5 img {
   object-fit: cover;
   width: 100%;
-  height: 200px;
+  height: 150px;
   border-radius: 15px 15px 0 0;
 }
 .cube4:hover {
@@ -587,9 +595,11 @@ footer {
   grid-template-rows: 200px;
   grid-gap: 3%;
   background-color: rgb(242, 242, 242);
+  font-family:ralewaypresquebold;
 }
 footer h4 {
   padding-bottom: 15px;
+  font-size:1.1em;
 }
 footer li {
   list-style-type: none;
@@ -598,7 +608,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: black;
-  font-size: 0.9em;
+  
 }
 footer ul {
   padding: 0;
